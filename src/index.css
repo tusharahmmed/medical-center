@@ -7,8 +7,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.section-side-padding{
+  padding: 0 10%;
+}
+
 :root{
-  --sectoin-background: #312E7B;
+  --section-background: #312E7B;
   --button-background: #01974D;
   --title-color: #110F46;
   --subtitle-color: #454E65;
