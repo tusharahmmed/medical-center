@@ -27,12 +27,15 @@ const Header = () => {
             </LeftSide>
 
             <RightSide>
+
                 <DesktopMenu>
                     <MenuLinks />
                 </DesktopMenu>
+
                 <MobileMenu>
                     <Hamburger />
                 </MobileMenu>
+                
             </RightSide>
 
         </Container>

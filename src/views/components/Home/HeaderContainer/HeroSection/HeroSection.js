@@ -5,14 +5,17 @@ import { device } from '../../../../../utils/screenSize';
 const HeroSection = () => {
     return (
         <Container className='section-side-padding'>
+            
             <LeftSide>
                 <Title>Take best quality Treatment For Us</Title>
                 <Description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</Description>
                 <Button>Know More</Button>
             </LeftSide>
+
             <RightSide>
                 <img src="/img/hero.png" alt="doctor" />
             </RightSide>
+            
         </Container>
     );
 };
