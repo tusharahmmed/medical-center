@@ -12,16 +12,34 @@ body {
   --section-background: #312E7B;
   --button-background: #01974D;
   --title-color: #110F46;
-  --subtitle-color: #454E65;
+  --description-color: #454E65;
+  --subtitle-color: #6A6F7A;
 }
 
 .section-side-padding{
   padding: 0 10%;
 }
 
-@media screen {
+/* service section  */
+.service-item:hover{
+  background: #FFAB25;
+}
+.service-item:hover> .service-icon img{
+  background: var(--button-background)
+}
+.service-item:hover .__service-title,.__service-description,.__service-item-link{
+ color: #fff;
+}
+.service-item:hover .__service-description,.__service-item-link{
+ color: #fff;
+}
+.service-item:hover .__service-item-link{
+ color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
   .section-side-padding{
-    padding: 0 5%;
+    padding: 0 6%;
   }
 }
 

@@ -38,12 +38,17 @@ background-repeat: no-repeat;
 background-position: bottom left;
 padding-bottom: 14rem;
 
+
+@media ${device.laptop}{
+    
+}
 @media ${device.pad}{
     flex-direction: column;
 }
 @media ${device.mobile}{
     padding-top: 1rem;
     padding-bottom: 8rem;
+    
 }
 `;
 

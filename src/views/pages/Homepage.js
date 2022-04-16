@@ -1,11 +1,11 @@
 import React from 'react';
-import { HeaderContainer } from '../components/Home';
+import { HeaderContainer, Service } from '../components/Home';
 
 const Homepage = () => {
     return (
         <>
         <HeaderContainer />
-            
+        <Service />
         </>
     );
 };
