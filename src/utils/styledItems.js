@@ -26,7 +26,15 @@ color: var(--title-color);
 font-weight: 700;
 line-height: 57px;
 
-
+@media ${device.pad}{
+    font-size: 30px;
+    line-height: 45px;
+}
+@media ${device.mobile}{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: .5rem;
+}
 `;
 
 

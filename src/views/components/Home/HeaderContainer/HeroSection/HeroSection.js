@@ -88,7 +88,7 @@ width: 90%;
     padding: 1rem 0rem 2rem;
 }
 `;
-const Button = styled.button`
+export const Button = styled.button`
 width: 162px
 height: 58px;
 margin: auto;

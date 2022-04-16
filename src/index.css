@@ -37,9 +37,44 @@ body {
  color: #fff;
 }
 
+/* department section  */
+.react-tabs__tab-list{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+}
+.react-tabs__tab{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.react-tabs__tab--selected{
+  color: #FFAB25
+}
+
+
 @media screen and (max-width: 1200px) {
   .section-side-padding{
     padding: 0 6%;
+  }
+}
+@media screen and (max-width: 998px) {
+  .react-tabs__tab-list{
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .react-tabs__tab-list{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+  }
+  .react-tabs__tab{
+    font-weight: 600;
+    font-size: 18px;
   }
 }
 

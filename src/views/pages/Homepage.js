@@ -1,11 +1,12 @@
 import React from 'react';
-import { HeaderContainer, Service } from '../components/Home';
+import { Department, HeaderContainer, Service } from '../components/Home';
 
 const Homepage = () => {
     return (
         <>
         <HeaderContainer />
         <Service />
+        <Department />
         </>
     );
 };

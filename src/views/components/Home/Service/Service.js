@@ -78,7 +78,7 @@ padding-top: 8rem;
 padding-bottom: 1rem;
 
 @media ${device.mobile}{
-
+    padding-top: 4rem;
 }
 `;
 
