@@ -55,6 +55,23 @@ body {
   color: #FFAB25
 }
 
+/* doctor section  */
+
+.doctor-item:hover .doctor-details{
+transform: translateY(0);
+}
+.doctor-item:hover img{
+  transform: scale(1.1);
+}
+.doctor-item img{
+  transition: all .4s ease-in-out;
+}
+
+.doctor-details{
+  transition: all .5s ease-in-out;
+  transform: scale(2, 3) translateY(100%);
+}
+
 
 @media screen and (max-width: 1200px) {
   .section-side-padding{

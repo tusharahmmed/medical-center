@@ -68,7 +68,7 @@ const ButtonWraper = styled.span`
 }
 `;
 
-const ButtomMore = styled.button`
+export const ButtomMore = styled.button`
 background: transparent;
 font-weight: 600;
 color: #00000;
