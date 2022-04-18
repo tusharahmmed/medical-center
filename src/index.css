@@ -20,6 +20,19 @@ body {
   padding: 0 10%;
 }
 
+/* prelaader */
+#preloader{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #fff;
+  z-index: 99999;
+  background-image: url("../public/img/preloader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+}
+
 /* service section  */
 .service-item:hover{
   background: #FFAB25;
@@ -50,9 +63,11 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 .react-tabs__tab--selected{
-  color: #FFAB25
+  color: #FFAB25;
+  border: none;
 }
 
 /* doctor section  */
