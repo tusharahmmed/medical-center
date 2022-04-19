@@ -18,7 +18,7 @@ const Department = () => {
 
             <TabSection>
 
-                <Tabs>
+                <Tabs focusTabOnClick={false}>
 
                     <TabList>
                         {
