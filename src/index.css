@@ -87,6 +87,11 @@ transform: translateY(0);
   transform: scale(2, 3) translateY(100%);
 }
 
+/* form section  */
+.option-item{
+  font-size: 16px;
+  color: var(--title-color);
+}
 
 @media screen and (max-width: 1200px) {
   .section-side-padding{
