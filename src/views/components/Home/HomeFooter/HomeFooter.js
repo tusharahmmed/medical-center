@@ -15,9 +15,9 @@ const HomeFooter = () => {
 
             <FooterBottom>
 
-            <Designer>Designed with <FaHeart color='#D7120D' /> by <a href="https://www.facebook.com/rajib.sing.988" target="_blank">Albert</a> and Developed by <a href="https://www.linkedin.com/in/tusharahmmed/" target="_blank">Tushar</a></Designer>
+                <Designer>Designed with <FaHeart color='#D7120D' /> by <a href="https://www.facebook.com/rajib.sing.988" target="_blank">Albert</a> and Developed by <a href="https://www.linkedin.com/in/tusharahmmed/" target="_blank">Tushar</a></Designer>
 
-            <CopyWright><span>©</span> Copy right 2022 all right reserved</CopyWright>
+                <CopyWright><span>©</span> Copy right 2022 all right reserved</CopyWright>
 
             </FooterBottom>
 
@@ -74,7 +74,11 @@ position: absolute;
 left: 1rem;
 top: 1rem;
 color: #c9c4c48c;
+font-size: 12px;
 
+@media ${device.pad}{
+    display: none;
+}
 a{
     color: #01974d;
 }
