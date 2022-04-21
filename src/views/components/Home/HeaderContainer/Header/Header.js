@@ -23,7 +23,7 @@ const Header = () => {
         <Container>
 
             <LeftSide>
-                <img src="/img/logo.png" alt="" />
+                <a href="./"><img src="/img/logo.png" alt="" /></a>
             </LeftSide>
 
             <RightSide>
