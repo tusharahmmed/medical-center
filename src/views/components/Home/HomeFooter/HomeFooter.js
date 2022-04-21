@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../../../../utils/screenSize';
 import { Footer } from '../../Shared';
+import { FaHeart } from 'react-icons/fa';
 
 const HomeFooter = () => {
     return (
@@ -11,7 +12,15 @@ const HomeFooter = () => {
                 <Footer />
 
             </Wraper>
+
+            <FooterBottom>
+
+            <Designer>Designed with <FaHeart color='#D7120D' /> by <a href="https://www.facebook.com/rajib.sing.988" target="_blank">Albert</a> and Developed by <a href="https://www.linkedin.com/in/tusharahmmed/" target="_blank">Tushar</a></Designer>
+
             <CopyWright><span>©</span> Copy right 2022 all right reserved</CopyWright>
+
+            </FooterBottom>
+
         </Container>
     );
 };
@@ -54,12 +63,28 @@ background-size: 250px;
 }
 `;
 
+const FooterBottom = styled.div`
+padding: 1rem 0rem;
+border-top: 1px solid #527ABE;
+background: var(--section-background);
+position: relative;
+`;
+const Designer = styled.p`
+position: absolute;
+left: 1rem;
+top: 1rem;
+color: #c9c4c48c;
+
+a{
+    color: #01974d;
+}
+`;
+
 const CopyWright = styled.p`
 color: #fff;
 text-align: center;
-border-top: 1px solid #527ABE;
-background: var(--section-background);
-padding: 1rem 0rem;
+
+
 
 span{
     margin-right: 5px;
