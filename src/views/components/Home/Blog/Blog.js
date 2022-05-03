@@ -29,7 +29,7 @@ const Blog = () => {
 
 
     return (
-        <Container className='section-side-padding'>
+        <Container id='blog' className='section-side-padding'>
             <Subtitle><DashLine /> Our Blog</Subtitle>
             <Title>Latest News Or <br />Blog Know More Us</Title>
 

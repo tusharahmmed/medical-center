@@ -9,12 +9,12 @@ const Header = () => {
     const MenuLinks = () => (
         <>
             <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Departments</a>
-            <a href="#">Doctor</a>
-            <a href="#">Blog</a>
-            <a href="#">Testimonial</a>
-            <a href="#">Appointment</a>
+            <a href="#service">Services</a>
+            <a href="#departments">Departments</a>
+            <a href="#doctor">Doctor</a>
+            <a href="#blog">Blog</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#appointment">Appointment</a>
         </>
     );
 

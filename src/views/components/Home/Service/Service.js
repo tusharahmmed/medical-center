@@ -7,7 +7,7 @@ import { device } from '../../../../utils/screenSize';
 
 const Service = () => {
     return (
-        <Container className='section-side-padding'>
+        <Container id='service' className='section-side-padding'>
             <Subtitle> <DashLine /> Our Service</Subtitle>
             <TitleWraper>
                 <ServiceTitle>The Further Quality <br />Our Health</ServiceTitle>

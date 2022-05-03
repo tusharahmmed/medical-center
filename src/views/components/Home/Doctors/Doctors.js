@@ -8,7 +8,7 @@ const Doctors = () => {
     return (
         <Container>
 
-            <Wraper className='section-side-padding'>
+            <Wraper id='doctor' className='section-side-padding'>
                 <DoctorsSubtitle><DashLine /> Our Doctors</DoctorsSubtitle>
 
                 <TitleWraper>

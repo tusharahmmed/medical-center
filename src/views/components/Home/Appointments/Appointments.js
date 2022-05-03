@@ -5,7 +5,7 @@ import AppointmentForm from './AppointmentForm/AppointmentForm';
 
 const Appointments = () => {
     return (
-        <Container className='section-side-padding'>
+        <Container id='appointment' className='section-side-padding'>
 
             <Subtitle><DashLine />Appointment</Subtitle>
             <Title>Make an <br />appointment </Title>

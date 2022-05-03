@@ -12,7 +12,7 @@ const Department = () => {
 
 
     return (
-        <Container className='section-side-padding'>
+        <Container id='departments' className='section-side-padding'>
             <Subtitle> <DashLine /> Our Department</Subtitle>
             <Title>Our Best <br /> Department Store</Title>
 
