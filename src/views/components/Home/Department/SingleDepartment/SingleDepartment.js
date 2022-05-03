@@ -5,18 +5,18 @@ import { Button } from '../../HeaderContainer/HeroSection/HeroSection';
 
 const SingleDepartment = ({name}) => {
     return (
-        <Container>
+        <Container className='animate__animated animate__fadeIn'>
 
             <ItemThumb>
                 <img src="/img/service.png" alt="" />
             </ItemThumb>
 
-            <ItemInfo>
+            <ItemInfo className='animate__animated animate__fadeIn'>
                 <Title>Welcome To Our {name} Depatment </Title>
                 <Description>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                 </Description>
-                <Button>Read More</Button>
+                <ReadMore className='animate__animated animate__fadeIn '>Read More</ReadMore>
             </ItemInfo>
 
         </Container>
@@ -32,6 +32,7 @@ const Container = styled.div`
 padding: 1.5rem 0rem;
 display: flex;
 align-items: center;
+animation-duration: 1.5s;
 
 @media ${device.pad}{
     flex-direction: column;
@@ -54,7 +55,7 @@ img{
 const ItemInfo = styled.div`
 width: 50%;
 margin-left: 4rem;
-
+animation-duration: 2s;
 @media ${device.pad}{
     width: 90%;
     padding-top: 2rem;
@@ -85,4 +86,8 @@ font-size: 16px;
 line-height: 28px;
 color: var(--description-color);
 padding: .5rem 0rem 2rem;
+`;
+
+const ReadMore = styled(Button)`
+animation-duration: 2.2s;
 `;
