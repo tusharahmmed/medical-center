@@ -8,12 +8,14 @@ import HeroSection from './HeroSection/HeroSection';
 
 const HeaderContainer = () => {
     return (
-        <Container>
-            <Wraper>
-                <Header />
-                <HeroSection />
-            </Wraper>
-        </Container>
+        <>
+            <Header />
+            <Container>
+                <Wraper>
+                    <HeroSection />
+                </Wraper>
+            </Container>
+        </>
     );
 };
 

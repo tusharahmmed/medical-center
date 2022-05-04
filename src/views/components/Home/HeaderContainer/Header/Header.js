@@ -53,11 +53,20 @@ const Container = styled.section`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
+background: var(--section-background);
 padding: 2rem 10% ;
 
 @media ${device.laptop}{
     padding: 2rem 3%;
+}
+@media ${device.pad}{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 999;
+}
+@media ${device.pad}{
+    height: 80px;
 }
 `;
 
