@@ -92,6 +92,15 @@ const Container = styled.section`
 margin-top: -3rem;
 padding-top: 6rem;
 padding-bottom: 6rem;
+
+@media ${device.pad}{
+    padding-top: 12rem;
+    margin-top: -9rem;
+}
+@media ${device.mobile}{
+    padding-top: 8rem;
+    margin-top: -6rem;
+}
 `;
 
 const SliderContainer = styled.div`

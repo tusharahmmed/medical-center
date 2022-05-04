@@ -49,6 +49,15 @@ export default Blog;
 const Container = styled.section`
 padding-top: 6rem;
 padding-bottom: 6rem;
+
+@media ${device.pad}{
+    padding-top: 12rem;
+    margin-top: -6rem;
+}
+@media ${device.mobile}{
+    padding-top: 8rem;
+    margin-top: -4rem;
+}
 `;
 
 const BlogWraper = styled.div`

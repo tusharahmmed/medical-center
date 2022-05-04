@@ -76,9 +76,11 @@ background-size: 30%;
 
 @media ${device.pad}{
 background-size: 50%;
+padding-top: 12rem;
 }
 @media ${device.mobile}{
 background-size: 80%;
+padding-top: 8rem;
 }
 `;
 

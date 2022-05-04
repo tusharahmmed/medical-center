@@ -50,8 +50,13 @@ const Container = styled.div`
 padding-top: 6rem;
 padding-bottom: 1rem;
 
+@media ${device.pad}{
+    margin-top: -4.25rem;
+    padding-top: 12rem;
+}
 @media ${device.mobile}{
-    padding-top: 4rem;
+    margin-top: -4.25rem;
+    padding-top: 8rem;
 }
 `;
 
