@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { device } from '../../../../../utils/screenSize';
 import { Twirl as Hamburger } from 'hamburger-react'
+import MobileMenuSection from '../MobileMenuSection/MobileMenuSection';
 
 const Header = () => {
 
+    const [isOpen, setIsOpen] = useState(false);
 
     const MenuLinks = () => (
         <>
@@ -20,25 +22,31 @@ const Header = () => {
 
 
     return (
-        <Container>
+        <>
+            <Container>
 
-            <LeftSide>
-                <a href="./"><img src="/img/logo.png" alt="" /></a>
-            </LeftSide>
+                <LeftSide>
+                    <a href="./"><img src="/img/logo.png" alt="" /></a>
+                </LeftSide>
 
-            <RightSide>
+                <RightSide>
 
-                <DesktopMenu>
-                    <MenuLinks />
-                </DesktopMenu>
+                    <DesktopMenu>
+                        <MenuLinks />
+                    </DesktopMenu>
 
-                <MobileMenu>
-                    <Hamburger />
-                </MobileMenu>
-                
-            </RightSide>
+                    <MobileMenu>
+                        <Hamburger toggled={isOpen} toggle={setIsOpen} />
+                    </MobileMenu>
 
-        </Container>
+                </RightSide>
+
+                <MobileMenuSection isOpen={isOpen} setIsOpen={setIsOpen} />
+            </Container>
+
+
+
+        </>
     );
 };
 
@@ -63,9 +71,9 @@ padding: 2rem 10% ;
     position: sticky;
     top: 0;
     height: 100px;
-    z-index: 999;
+    z-index: 99;
 }
-@media ${device.pad}{
+@media ${device.mobile}{
     height: 80px;
 }
 `;
@@ -75,7 +83,7 @@ const LeftSide = styled.div`
 `;
 
 const RightSide = styled.div`
-
+z-index: 999;
 `;
 const DesktopMenu = styled.nav`
 
