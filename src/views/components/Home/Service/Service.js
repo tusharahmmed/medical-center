@@ -74,7 +74,8 @@ export default Service;
 
 
 const Container = styled.section`
-padding-top: 8rem;
+margin-top: 2rem;
+padding-top: 6rem;
 padding-bottom: 1rem;
 
 @media ${device.mobile}{

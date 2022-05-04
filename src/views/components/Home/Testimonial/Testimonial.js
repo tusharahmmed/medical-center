@@ -89,7 +89,8 @@ export default Testimonial;
 
 
 const Container = styled.section`
-padding-top: 3rem;
+margin-top: -3rem;
+padding-top: 6rem;
 padding-bottom: 6rem;
 `;
 
